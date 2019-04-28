@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        /**
+         * This section is used for waiting for the custom element to load
+         * and then mounting it into the app for demo/testing
+         */
+        const customElementName = <%= JSON.stringify(htmlWebpackPlugin.options.elementName) %>;
+        const watcher = window.setInterval(function() {
+            if (!!window.customElements.get(customElementName)) {
+                window.clearInterval(watcher);
+                const app = document.getElementById('app');
+                const el = document.createElement(customElementName);
+                app.appendChild(el);
+            }
+        }, 100)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "name": "dis-graph",
+  "version": "1.0.0",
+  "description": "An interactive visualization for GraphQL schemas",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "lint": "eslint src/**/* --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neblar/dis-graph.git"
+  },
+  "keywords": [
+    "graphQL",
+    "web-component"
+  ],
+  "author": "Neblar Technologies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neblar/dis-graph/issues"
+  },
+  "homepage": "https://github.com/neblar/dis-graph#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
