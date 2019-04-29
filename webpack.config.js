@@ -2,6 +2,10 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const elementName = require('./package.json').name;
 
 const config = {
+  entry: {
+    polyfill: 'babel-polyfill',
+    app: './src/index.js',
+  },
   module: {
     rules: [
       {

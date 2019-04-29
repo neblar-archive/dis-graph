@@ -17,6 +17,9 @@
                 window.clearInterval(watcher);
                 const app = document.getElementById('app');
                 const el = document.createElement(customElementName);
+                el.schema = {
+                    'foo': 'bar',
+                };
                 app.appendChild(el);
             }
         }, 100)
